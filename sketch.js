@@ -54,7 +54,7 @@ function setup() {
     box21 = new Box(450,9.5,40,60);
     
     striker = new Polygon(150,450,50);
-    shooter = new Launcher(striker.body,{x:150,y:420});
+    shooter = new Launcher(striker.body,{x:150,y:450});
     
 
 
@@ -111,7 +111,7 @@ function mouseDragged(){
 
 
 function mouseReleased(){
-    slingshot.fly();
+    shooter.fly();
 }
 
 
