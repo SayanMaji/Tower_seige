@@ -1,7 +1,7 @@
 class Box{
   constructor(x, y, width, height) {
       var options = {
-        isStatic:true,
+        
           'restitution':0.8,
           'friction':1.0,
           'density':1.0
@@ -14,7 +14,7 @@ class Box{
     display(){
       var pos=this.body.position;
       push();
-      translate(this.body.position.x, this.body.position.y);
+     // translate(this.body.position.x, this.body.position.y);
       rectMode(CENTER);
       var rand=Math.round(random(1,4));
       switch(rand){
